@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ann Arbor Skyline </title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{athlete_name} Performance</title>
+   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!-- Header Section -->
-<header>
-<h1>Ann Arbor Skyline</h1>
-</header>
-<ul>
-<div>
-<img
-src="athleteImages/21147175.jpg"
-alt="Loki Bowser at the finish line"
-width="300"
-/>
-<p id="name">Name: Loki Bowser</p>
-<a href="https://www.athletic.net/athlete/21147175/cross-country/high-school">View Details</a>
-</div>
-<div>
-<img
-src="athleteImages/24262808.jpg"
-alt="Becca Van Lent during a race"
-width="300"
-/>
-<p id="name">Name: Becca Van Lent</p>
-
-<a href="https://www.athletic.net/athlete/24262808/cross-country/high-school">View Details</a>
-</div>
-</li>
-<!-- More members can be added here -->
-</ul>
-</section>
+   <header>
+       <h1>{athlete_name}</h1>
+   </header>
+   <section id="athlete-results">
+       <h2>Performance Results</h2>
+       <table id="athlete-table">
+           <thead>
+               <tr>
+                   <th>Date</th>
+                   <th>Meet</th>
+                   <th>Time</th>
+                   <th>Overall Place</th>
+                   <th>Comments</th>
+                   <th>Image</th>
+               </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>{date}</td>
+                <td>{meet}</td>
+                <td>{time}</td>
+                <td>{overall_place}</td>
+                <td>{comments}</td>
+                <td><img src="athleteImages/{image}" alt="{athlete_name} at {meet}" width="100"></td>
+            </tr>
+           </tbody>
+       </table>
+   </section>
+</body>
+</html>
