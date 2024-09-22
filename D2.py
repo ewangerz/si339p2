@@ -90,4 +90,15 @@ for filename in os.listdir(athlete_folder):
            </tbody>
            </table>
        </section>
+   </body>
+</html>
+       '''
 
+
+       # Write the HTML content to a file
+       output_file_path = os.path.join(output_folder, f"{athlete_name.replace(' ', '_').lower()}.html")
+       with open(output_file_path, 'w') as output_file:
+           output_file.write(html_content)
+
+
+print("HTML files generated for each athlete.")
